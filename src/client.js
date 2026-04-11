@@ -218,7 +218,7 @@ module.exports = class Client {
    * @prop {boolean} [DEBUG] Enable debug mode
    * @prop {'data' | 'prodata' | 'widgetdata'} [server] Server type
    * @prop {string} [location] Auth page location (For france: https://fr.tradingview.com/)
-   * @prop {Object<string, string>} [headers] Custom headers for the WebSocket connection (e.g. for WAF bypass)
+   * @prop {Object<string, string>} [headers] Custom WebSocket headers
    */
 
   /**
