@@ -6,7 +6,7 @@ describe('getUser redirect protection', () => {
     let callCount = 0;
     const axiosMock = {
       get: async (url: string) => {
-        callCount++;
+        callCount += 1;
         const isA = url === 'https://www.tradingview.com/';
         return {
           data: '<html>no auth here</html>',
@@ -32,6 +32,7 @@ describe('getUser redirect protection', () => {
     delete require.cache[miscPath];
 
     try {
+      // eslint-disable-next-line global-require
       const misc = require('../src/miscRequests');
       await expect(
         misc.getUser('fake_session', 'fake_signature'),
