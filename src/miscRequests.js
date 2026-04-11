@@ -431,7 +431,7 @@ module.exports = {
    */
   async getUser(session, signature = '', location = 'https://www.tradingview.com/', redirectCount = 0) {
     if (redirectCount > 5) {
-      throw new Error('Too many redirects - invalid session/signature');
+      throw new Error('Too many redirects - possible WAF or geo-restriction');
     }
 
     const { data, headers } = await axios.get(location, {
