@@ -21,7 +21,7 @@
     "real-time",
     "market-data"
   ],
-  "author": "",
+  "author": "your-username",
   "license": "MIT",
   "dependencies": {
     "ws": "^8.14.2"
@@ -41,5 +41,6 @@
   "bugs": {
     "url": "https://github.com/your-username/TradingView-API/issues"
   },
-  "homepage": "https://github.com/your-username/TradingView-API#readme"
+  "homepage": "https://github.com/your-username/TradingView-API#readme",
+  "private": true
 }
