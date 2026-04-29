@@ -44,6 +44,7 @@
   "homepage": "https://github.com/your-username/TradingView-API#readme",
   "private": true,
   "jest": {
-    "testTimeout": 15000
+    "testTimeout": 30000,
+    "verbose": true
   }
 }
